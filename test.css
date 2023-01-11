@@ -1,0 +1,21 @@
+.container2{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+margin-top: 100px;
+}
+.text{
+    width: 45%;
+    height: 100%;
+}
+.container2 .swiper{
+    width:45%;
+    height: 100%;
+    position: relative;
+}
+.container2 .swiper img{
+    width: 100%;
+    height: 100%;
+}
+

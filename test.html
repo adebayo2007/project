@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="container2">
+<div class="text">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt fugiat voluptatem beatae neque sapiente itaque deleniti ab, quam excepturi perferendis doloribus iure voluptatibus adipisci qui provident modi distinctio sint!</h1>
+</div>
+
+
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./IMAGE/1secure agency.png" alt=""></div>
+          <div class="swiper-slide"><img src="./IMAGE/cctv.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./IMAGE/consultant1.jpg" alt=""></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+       
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay :{
+        delay:1000,
+        disableOnInteraction:false,
+    },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+</script>
+     
+</body>
+</html>

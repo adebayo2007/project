@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family:sans-serif;
+
+}
+/* nav */
+nav{
+    background:  rgb(62, 103, 120);
+    width: 4vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+nav.open{
+    width: 10vw;
+}
+
+.nav-container{
+    width:90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+    }
+
+    .nav-logo{
+        width: 5rem;
+        display: none;
+        align-items: center;
+    }
+    .nav-logo.open{
+        display: flex;
+    }
+    .nav-logo img{
+        width: 100%;
+        font-size: 50px;
+        height: 70px;
+        }
+        .nav-links{
+            display: none;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            gap: 4rem;
+        }
+        .nav-links.open{
+            display: flex;
+        }
+        .nav-links li a{
+            color:white;
+            font-weight: 500;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition:color  400ms ease;
+            position: relative;
+        }
+        .nav-links a:hover{
+            color: aquamarine;
+        }
+        #nav-toggle-close{
+            position: absolute;
+            display: none;
+            top: 3px;
+            right: 3px;
+        }
+        #nav-toggle-open {
+            position: absolute;
+            top: 3px;
+        }
+
+
+
+
+         /* header */
+         header{
+            width: 96vw;
+            margin-left: 4vw;
+            position: fixed;
+            height: 12vh;
+            background:  rgb(62, 103, 120);;
+        }
+        .header-number{
+            width: 100%;
+            color: white;
+
+        }
+        .fall{
+            display: flex;
+            gap: 15rem;
+            list-style: none;
+            font-size: 20px;
+        }
+        .fall img{
+            height: 5rem;
+            width: 15rem;
+        }
+        .icon{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding:rem;
+            gap: 1rem;
+        }
+        .icon a{
+            font-size: 30px;
+            color: white;
+            margin: auto;
+            display: inline;
+            padding: 1rem;
+            
+        }
+        .firstDiv{
+            margin-top: 5rem;
+            background: rgb(62, 103, 120);;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: white;
+        }
+        .Gen{
+            display: flex;
+            text-align: center;
+            gap:2rem;
+            cursor: pointer;
+            width: 90%;
+            margin: auto;
+        }
+        .adress:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        .adress{
+            width: 25%;
+            background:rgb(62, 103, 120);;
+            padding: 1rem;
+        }
+        .adress p{
+            width: 60%;
+            color: white;
+            margin: auto;
+        }
+        .adress h1{
+            color: whitesmoke;
+        }
+        .axe{
+            font-size: 70px;
+            color:white;
+        }
+        .phone{
+            width: 25%;
+            background:rgb(62, 103, 120);;
+            padding: 1rem;
+        }
+        .phone:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        .phone p{
+            width: 70%;
+            margin: auto;
+            color: white;
+        }
+        .power{
+            font-size: 70px;
+            color: white;
+        }
+        .phone h1{
+            color: white;
+        }
+        .message{
+            width: 25%;
+            background:rgb(62, 103, 120);;
+            padding: 1rem;            
+        }
+        .message p{
+            color: white;
+        }
+        .message:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        .message h1{
+            color: white;
+        }
+        .muizz{
+            font-size: 50px;
+            color: white;
+        }
+
+        .hour{
+            width: 25%;
+            background:rgb(62, 103, 120);
+            height: 32vh;
+            padding: 1rem;
+            margin: auto;
+        }
+        .hour p{
+            color: white;
+        }
+        .hour:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        .hour h1{
+            color: white;            
+        }
+        .gowon{
+            font-size: 50px;
+            color: white;
+        }
+        .MIRACLE{
+            margin: auto;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            margin-top: 3rem;
+        }
+       
+        .CarryMap{
+            display: flex;
+            width: 85%;
+            gap: 5rem;
+            box-shadow: 5px 10px 5px 5px white;
+            margin: auto;
+        }
+        .map{
+            border: 1px solid black;
+            width: 50%;
+            margin-top: 5rem;
+        }
+        form{
+            width: 40%;
+            border: 2px solid rgb(62, 103, 120);;
+            margin-top: 5rem;
+            display: block;
+            padding: 2rem;
+
+        }
+        .CarryAll{
+            width: 90%;
+            margin: auto;
+        }
+        input{
+            width: 90%;
+            margin: auto;
+            height: 3rem;
+        }
+        label{
+            width: 100%;
+            font-size: 20px;
+            display: block;
+            color:rgb(62, 103, 120);;
+             margin: auto;
+        }
+        select{
+            width: 90%;
+            height: 3rem;
+            margin: auto;
+            font-size: 20px;
+        }
+        option{
+            color: rgb(62, 103, 120);;
+        }
+        .insider input{
+            width: 90%;
+            height: 10rem;
+        }
+        form button{
+            margin-top: 2rem;
+            font-weight: bold;
+            font-size:19px;
+            width: 35%;
+            border-radius: 10px;
+            border: none;
+            height: 3rem;
+            box-shadow: 10px 10px 10px 10px  rgb(62, 103, 120);;
+        }
+        form a{
+            color: rgb(62, 103, 120);;
+
+        }
+        form button:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        .general{
+            display: flex;
+            width: 90%;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .sales{
+            position: relative;
+            width:20%;
+            cursor: pointer;
+            color: white;
+            background: rgb(62, 103, 120);;
+            border: none;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+        .sales:hover{
+            background: rgb(64, 49, 49);
+            transform: scale(1.0);
+            transition: 1s ease-in-out;
+        }
+        
+        .sales h2{
+            font-size: 20px;
+        }
+
+
+
+        .sales p{
+            font-size: 17px;
+        }
+

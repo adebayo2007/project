@@ -1,0 +1,635 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        overflow-x: hidden;
+        font-family:sans-serif;
+
+    }
+    /* nav */
+    nav{
+        background:  rgb(62, 103, 120);
+        width: 4vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        transition: all .5s ease-in-out;
+        box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+        }
+
+        nav.open{
+        width: 10vw;
+        }
+
+    .nav-container{
+        width:90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        
+        
+        }
+
+        .nav-logo{
+            width: 5rem;
+            display: none;
+            align-items: center;
+        }
+        .nav-logo.open{
+            display: flex;
+        }
+        .nav-logo img{
+        width: 100%;
+        font-size: 50px;
+        height: 70px;
+        }
+        .nav-links{
+            display: none;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            gap: 3rem;
+        }
+        .nav-links.open{
+            display: flex;
+        }
+        .nav-links li a{
+            color:white;
+            font-weight: 500;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition:color  400ms ease;
+            position: relative;
+        }
+        .nav-links a:hover{
+            color: aquamarine;
+        }
+        #nav-toggle-close{
+            position: absolute;
+            display: none;
+            top: 3px;
+            right: 3px;
+        }
+        #nav-toggle-open {
+            position: absolute;
+            top: 3px;
+        }
+
+
+
+         /* header */
+         header{
+            width: 96vw;
+            margin-left: 4vw;
+            height: 10vh;
+            z-index: 100;
+            background: rgb(62, 103, 120);;
+            position: fixed;
+        }
+        .header-number{
+            width: 100%;
+            color: white;
+        }
+        .fall{
+            display: flex;
+            gap: 15rem;
+            list-style: none;
+            font-size: 20px;
+        }
+        .fall img{
+            height: 5rem;
+            width: 17rem;
+        }
+        .icon{
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .icon a{
+            font-size: 30px;
+            color: white;
+            margin: auto;
+            display: inline;
+            
+        }
+        .atomic{
+            width: 100vw;
+
+        }
+       
+        .atomic img{
+            width: 100%;
+            height: 72vh;
+        }
+        .unstop{
+            background: rgba(0, 0, 0, 0.868);
+            width: 100%;
+            color: white;
+            text-align: center;
+            margin-top: 0.3rem;
+        }
+        .unstop p{
+            font-size: 30px;
+            width: 70%;
+            padding: 2rem;
+            margin: auto;
+            /* color: white; */
+        }
+        .chelsea{
+            display: flex;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .chelsea p{
+            position: absolute;
+            top: 20%;
+            font-size: 30px;
+            color:white;
+            width: 80%;
+
+
+        }
+        .flec{
+           position: absolute;
+           left: 10%;
+           width: 100vw;
+           margin-top: -100px;
+           color: white;
+           font-size: 25px;
+
+
+        }
+        .flec a{
+            color:  rgb(62, 103, 120);
+            font-size: 25px;
+        }
+        .intermision{
+            display: flex;
+            width: 100vw;
+
+        }
+
+        .mission{
+            height: 100%;
+            width: 70%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            position: relative;
+        }
+        .every{
+            width: 30%;
+            background:  rgb(62, 103, 120);
+            color: white;
+            height: 52vh;
+            margin: auto;
+            border: dotted;
+            border-color:aliceblue;
+            padding: 1rem;
+            margin-top: 80px;
+        }
+        .every span{
+            display: block;
+            font-size: 50px;
+            color: white;
+        }
+        .revive p{
+            font-size: 20px;
+        }
+        .mission p{
+            font-size: 20px;
+            width: 80%;
+            background:  rgb(62, 103, 120);
+            padding: 2rem;
+            margin: auto;
+            border: dotted;
+            border-color:aliceblue;
+            margin-top: 30px;
+            color: white;
+            line-height: 2rem;
+            text-align: justify;
+        }
+        .mission h1{
+            background: linear-gradient(45deg,  rgb(62, 103, 120) 90%, transparent 30%);;
+            width:23.5%;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .shark{
+            display: flex;
+            width: 100vw;
+        }
+        .vission{
+            height: 100%;
+            width: 70%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            position: relative;
+        }
+        .vission h1{
+            background: linear-gradient(45deg,  rgb(62, 103, 120) 90%, transparent 30%);;
+            width: 23%;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .vission p{
+            font-size: 20px;
+            width: 80%;
+            background:  rgb(62, 103, 120);
+            padding: 2rem;
+            margin: auto;
+            border: dotted;
+            border-color:aliceblue;
+            margin-top: 30px;
+            color: white;
+            line-height: 2rem;
+            text-align: justify;
+        }
+        .chose{
+            width: 80vw;
+            height: 100%;
+            padding: 1rem;
+            position: relative;
+        }
+        .chose h1{
+            background: linear-gradient(45deg,  rgb(62, 103, 120) 90%, transparent 30%);
+            width: 24%;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        .General{
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+            /* background:  rgb(62, 103, 120); */
+            /* color: white; */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .icon3 img{
+            border-radius: 10px;
+            width: 30%;
+            background: rgb(62, 103, 120);
+            /* margin-top: 3rem; */
+        }
+        
+        .icon3{
+            display: flex;
+            width: 28%;
+
+            gap: 2rem;
+        }
+        .vector{
+            width: 90%;
+            margin: auto;
+            
+        }
+        .vector p{
+            font-size: 20px ;
+            text-align: justify;
+            width: 100%;
+        }
+        
+       .excutive{
+            background:rgb(62, 103, 120);
+            text-align: center;
+            margin-top: 2rem;
+            color: white;
+            height: 9vh;
+            padding: 0.6rem;
+            /* color: white; */
+        }
+        .img1 img, .img2 img, .img3 img, .img4 img, .img5 img {
+            width: 70%;
+
+            height: 300px;
+            box-shadow: 10px 5px 5px  rgb(62, 103, 120);
+            
+            
+        }
+        
+        
+        .img1, .img2, .img3, .img4, .img5 {
+            width: 30%;
+            position: relative;
+            justify-content: center;
+        
+        }
+        
+        .general{
+            display: flex;
+            width: 90%;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .icon1{
+            display: none;
+            margin: auto;
+            position: absolute;
+            top: 65%;
+            border-radius: 2chp;
+            align-items: center;
+            font-size: 30px;
+            color:white;
+            text-align: center;
+            width: 70%;
+        }
+        .img1:hover .icon1{
+            gap: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        .img1 h1{
+            color:  rgb(62, 103, 120);
+        }
+        
+        .icon1 span {
+            cursor: pointer;
+        } 
+        .miracle{
+        width: 800px;
+        background: rgb(62, 103, 120);
+        margin: auto;
+        height: 500px;
+        z-index: -1;
+        position: relative;
+
+        }
+        .miracle img{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            border: 5px solid white;
+            left: 35%;
+            top: 20%;
+        } 
+        .adjourn{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background: rgb(62, 103, 120);
+            border: 5px solid white;
+            left: 35%;
+            top: 20%;
+            transform: rotate(-45deg);
+            
+        }    
+        .flying{
+            position: absolute;
+            z-index: 20;
+            top: 400px;
+            width: 50%;
+            color: white;
+            left: 30%;
+            text-align: center;
+        } 
+        .morn{
+            width: 80%;
+            margin: auto;
+            background: rgb(62, 103, 120);
+            line-height: 3rem;
+            padding: 1rem;
+            color: white;   
+            font-size: 20px;
+            margin-top: 2rem;
+        } 
+        
+        
+
+        @media screen and (max-width:1024px) {
+            header {
+                position: relative;
+                width: 100%;
+                position: fixed;
+            }
+        
+            .fall {
+                position: relative;
+                width: 100%;
+                gap: 1rem;
+            }
+        
+            .icon {
+                width: 30%;
+                margin-top: -1.5rem;
+            }
+        
+            .header-number {
+                width: 30%;
+            }
+        
+            .fall img {
+                width: 10rem;
+            }
+        
+            .Generally {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+            }
+        
+            .icon2 {
+                width: 300px !important;
+            }
+            .chelsea{
+                width: 100vw;
+                margin: auto;
+            }
+            .chelsea p{
+                width: 80%;
+                line-height: 2rem;
+                font-size: 17px;
+            }
+            .mission{
+                width: 100vw;
+
+            }
+            .every{
+                width: 80vw;
+            }
+            .mission h1{
+                width: 50%;
+            }
+            .intermision{
+                display: flex;
+                flex-direction: column;
+            }
+            .shark{
+                display: flex;
+                flex-direction: column;
+            }
+            .vission{
+                width: 100vw;
+            }
+            .vission h1{
+                width: 50%;
+            }
+            .chose  h1{
+                width: 50%;
+            }
+            .General{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90vw;
+                margin: auto;
+
+            }
+            .icon3{
+                width: 30%;
+            }
+           
+        }
+
+
+        @media screen and (max-width:1018px) {
+            header {
+                position: relative;
+                width: 100%;
+            }
+        
+            .fall {
+                position: relative;
+                width: 100%;
+                gap: 1rem;
+            }
+        
+            .icon {
+                width: 30%;
+                margin-top: -1.5rem;
+            }
+        
+            .header-number {
+                width: 30%;
+                font-size: 12px !important;
+            }
+        
+            .fall img {
+                width: 7rem !important;
+            }
+        
+            .Generally {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+            }
+        
+            .icon2 {
+                width: 300px !important;
+            }
+            .chelsea{
+                width: 100vw;
+                margin: auto;
+            }
+            .chelsea p{
+                width: 80%;
+                line-height: 2rem;
+                font-size: 17px;
+            }
+            
+        }
+        @media screen and (max-width:500px) {
+            .fall img {
+                width: 10rem;
+            }
+        
+            .icon {
+                width: 65%;
+        
+            }
+            .chelsea{
+                width: 100vw;
+                margin: auto;
+            }
+            .chelsea p{
+                width: 80%;
+                line-height: 2rem;
+                font-size: 17px;
+            }
+            .mission{
+                width: 100vw!important;
+
+            }
+            .every{
+                width: 80vw !important;
+                padding: 2px 15px;
+            }
+            .mission h1{
+                width: 60% !important;
+            }
+            nav.open{
+                width: 13vw !important;
+            }
+            .nav-links{
+                font-size: 10px;
+            }
+            
+           
+        
+        }
+        @media screen and (max-width:850px) {
+            .fall img {
+                width: 10rem;
+            }
+        
+            .icon {
+                width: 65%;
+        
+            }
+            .chelsea{
+                width: 100vw;
+                margin: auto;
+            }
+            .chelsea p{
+                width: 90%;
+                position: absolute;
+                top: 10%;
+                line-height: 2rem;
+                font-size: 17px;
+            }
+            .flec{
+                width: 100%;
+                font-size: 15px;
+                top: 95%;
+            }
+            .flec a{
+                font-size: 15px;
+            }
+            
+            
+            
+           
+        
+        }
+
+       
+    
+
+
+ 
+       
